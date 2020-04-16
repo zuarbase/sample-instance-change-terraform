@@ -1,6 +1,6 @@
 # AWS Instance Change Notifications on Slack   
    
-This repo contains terraform code AND lambda code. You will need to edit a few files and create a lambda deployment package before you apply.   
+This repo contains terraform code AND lambda code. You will need to edit a few files before you apply.   
 _NOTE: you will need these resources in every region that you want notifications for._
 
 ## terraform.tfvars   
