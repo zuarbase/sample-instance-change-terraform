@@ -5,7 +5,7 @@ _NOTE: you will need these resources in every region that you want notifications
 
 ## terraform.tfvars   
    
-Copy `terraform.tfvars.default` to a new file named `terraform.tfvars` then edit the new file and enter your AWS Access ID, KEY, and Slack webhook.   
+Copy `terraform.tfvars.default` to a new file named `terraform.tfvars` then edit the new file and enter your AWS Access ID, KEY, Account Number, and Slack webhook.   
 _This file is ignored in .gitignore_   
    
 ## backend.tf   
