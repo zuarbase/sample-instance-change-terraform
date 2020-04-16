@@ -13,7 +13,7 @@ instance_id=<instance-id>, time=<time>, region=<region>, state=<state>
 ACCESSKEY = os.environ['ACCESS_ID']
 SECRETKEY = os.environ['ACCESS_KEY']
 REGION = os.environ['REGION']
-SLACK_HOOK = 'https://hooks.slack.com/services/T3HG8SDET/B0987FGhg5gH/dAPkjshdfkjJHGAy33CALdj0' # not a real hook link
+SLACK_HOOK = os.environ['SLACK_HOOK']
 
 def get_instance_name(fid):
     """When given an instance ID as str e.g. 'i-1234567', return the instance 'Name' from the name tag."""

@@ -43,6 +43,7 @@ resource "aws_lambda_function" "instance_state-lambda-function" {
       ACCESS_ID = var.access_key
       ACCESS_KEY = var.secret_key
       REGION = var.region
+      SLACK_HOOK = var.slack_hook
     }   
   }
   depends_on    = [aws_iam_role_policy_attachment.instance_state-lambda_logs, aws_cloudwatch_log_group.instance_state-lambda-function-log-group, aws_s3_bucket_object.instance_state-lambda_object]

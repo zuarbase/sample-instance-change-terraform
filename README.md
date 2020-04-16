@@ -5,7 +5,7 @@ _NOTE: you will need these resources in every region that you want notifications
 
 ## terraform.tfvars   
    
-Copy `terraform.tfvars.default` to a new file named `terraform.tfvars` then edit the new file and enter your AWS Access ID and KEY.   
+Copy `terraform.tfvars.default` to a new file named `terraform.tfvars` then edit the new file and enter your AWS Access ID, KEY, and Slack webhook.   
 _This file is ignored in .gitignore_   
    
 ## backend.tf   
@@ -29,14 +29,6 @@ If you are not in region us-east-1, edit `variables.tf` and update the region ac
 ## instance\_state.tf   
    
 Edit `instance_state.tf` and update the name of the bucket you will create to store the lambda deployment package. Can be any unique bucket name.   
-   
-## Edit instance\_state/instance\_state.py and then create a deployment package.   
-   
-Edit `instance_state/instance_state.py` and change the global variable at the top `SLACK_HOOK` to your own slack hook. Save the file, then create a deployment package for lambda. If you have both Python and Docker installed, you might try using this tool: https://pypi.org/project/spin-and-heave/   
-   
-The zip file should be placed in the root of this directory, and should be named `instance_state.zip`.  
-
-Once you have a zip file with your lambda code, and its dependencies, you're ready to deploy everything.   
    
 ## Deploy all infrastructure   
    
