@@ -9,6 +9,8 @@ locals {
   instance_state_lambda_role_name = "instance_state-lambda-function-lambda-role-${var.region}-${terraform.workspace}"
 }
 
+variable "slack_hook" {}
+
 resource "aws_s3_bucket" "instance_state_bucket" {
   bucket = local.instance_state_lambda_bucket
   acl    = "private"
