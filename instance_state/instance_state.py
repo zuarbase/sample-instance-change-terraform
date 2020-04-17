@@ -5,10 +5,7 @@ from dateutil import tz, parser
 import boto3
 import requests
 
-"""
-pending, running, stopping, stopped
-instance_id=<instance-id>, time=<time>, region=<region>, state=<state>
-"""
+"""get info from sns and post to slack"""
 
 ACCESSKEY = os.environ['ACCESS_ID']
 SECRETKEY = os.environ['ACCESS_KEY']
