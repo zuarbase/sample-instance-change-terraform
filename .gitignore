@@ -2,4 +2,4 @@ terraform.tfvars
 tf.log
 .terraform
 .DS_Store
-
+*.zip
